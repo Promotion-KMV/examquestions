@@ -1,0 +1,13 @@
+{% extends 'template_base.html' %}
+
+{% block content %}
+
+List of all exams
+
+{% for instance in object_list %}
+    <p>{{instance.exam_id}} - <a href='/certification/{{instance.vendor_id}}/{{instance.exam_id}}'>{{instance.exam_name}} </a></p>
+
+{% endfor %}
+
+
+{% endblock %}

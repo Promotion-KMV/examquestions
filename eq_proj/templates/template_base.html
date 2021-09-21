@@ -1,0 +1,50 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>{% block title %}ExamQuestions.com{% endblock %}</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href="{% static '/css/main.css' %}">
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon" />
+    <script src = "{% static 'js/javascript.js' %}"> </script>
+    <base href="/">
+</head>
+<body>
+    <main> 
+
+        <section class="navigation_block">
+
+            <a href='/'>  ExamQuestions.com  </a>
+    
+            <div class="login_links">
+                <a href='register'>RegisterRR</a>
+                <a href='login'>Login</a>
+    
+            </div>
+    
+            <div class="login_links">
+                <a href="{% url 'logout'%}">Logout</a>
+                
+    
+            </div>
+    
+            Hello,{{request.user}}
+    
+        </section>
+
+
+        {% block content %}
+        {% endblock %}
+
+
+
+    </main>
+</body>
+</html>
+
+
+
+

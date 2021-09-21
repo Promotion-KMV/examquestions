@@ -1,0 +1,23 @@
+{% extends 'template_base.html' %}
+
+{% block content %}
+
+    
+    <section class="exam_vendors_block">
+        
+        List of all Vendors
+
+        {% for instance in object_list_1 %}
+            <p>{{instance.vendor_id}} - <a href='certification/{{instance.vendor_id}}'>{{instance.vendor_name}} </a></p>
+        
+        {% endfor %}
+
+    </section>
+
+
+    {% endblock %}
+
+
+
+
+

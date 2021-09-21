@@ -1,0 +1,70 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExamQuestions</title>
+    <link rel='stylesheet' type='text/css' media='screen' href="{% static '/css/home.css' %}">
+</head>
+<body>
+
+    <div class="menu-container">
+        <div class="menu-wrapper">
+            
+                <div class="logo">
+                    ExamQuestions
+                </div>
+                <div class="acceess_buttons">
+                    <div class="login_in_button">
+                        <a href="#">Log In</a>
+                    </div>
+                    <div class="register_button">
+                        <a href="#">Register</a>
+                    </div>
+                </div>
+               
+        </div>    
+
+        
+    </div>
+    <div class="content_container">
+
+        <div class="search_block">
+            <form action="#">
+                <input type="text" placeholder="Search.." name="search">
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <div class="vendors_list">
+        
+                List of all Vendors
+        
+                {% for instance in object_list_1 %}
+                    <p>{{instance.vendor_id}} - <a href='certification/{{instance.vendor_id}}'>{{instance.vendor_name}} </a></p>
+                
+                {% endfor %}
+        
+            
+
+        </div>
+    </div>
+    <div class="bottom_menu_container">
+
+    </div>
+    
+
+
+    <script src = "{% static 'js/javascript.js' %}"> </script>
+</body>
+</html>
+
+    
+
+
+
+
+
+

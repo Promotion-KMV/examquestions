@@ -1,0 +1,49 @@
+.navigation_block
+{
+    background-color: #022757;
+    height: 50px;
+    display: flex;
+}
+
+.exam_vendors_block
+{
+    float:left;
+    background-color: #dedede;
+    height: 300px;
+    width: 30%;
+    margin: 20px 20px 20px 0px;
+    padding: 10px;
+}
+
+.top_exams_list_block
+{
+    float:left;
+    background-color: #dedede;
+    height: 300px;
+    width: 700px;
+    margin: 5px;
+    margin: 20px 10px 20px 0px;
+    padding: 10px;
+}
+
+.question_block
+{
+    background-color: #dedede;
+    
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+
+}
+
+.question_block .header
+{
+    background-color: #5e679b;
+}
+
+#div_answer
+{
+
+    background-color: lightblue;
+
+}
