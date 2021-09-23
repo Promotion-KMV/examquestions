@@ -88,7 +88,7 @@ DATABASES = {
        'ENGINE': 'django.db.backends.postgresql',
        'NAME': 'eq_com_db',
        'USER': 'eq_user',
-       'PASSWORD': 'od1un$5kp',
+       'PASSWORD': os.environ.get('PASSWORD_DB'),
        'HOST': os.environ.get('HOST_DB'),
        'PORT': '5432',
    }
